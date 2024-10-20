@@ -216,3 +216,31 @@ nav {
   .btn-explore:hover {
     background-color: #388E3C; /* Couleur légèrement plus foncée au survol */
   }
+
+
+
+
+body {
+    font-size: 16px;
+}
+@media screen and (max-width : 600px)
+{
+    body {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px)
+    {
+        body {
+            padding: 10px;
+        }
+        form {
+            width: 100%;
+        }
+        input, textarea {
+            width: 100%
+        }
+        nav ul {
+            display: block;
+        }
+    }
