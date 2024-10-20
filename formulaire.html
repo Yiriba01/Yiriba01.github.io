@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="formulaire.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="formulaire" class="titre">
+        <h1>Formulaire de Demande d'Information</h1>
+    </section>
+    <h3 class="titre3">Envoyez-moi un message</h3>
+    <p class="ter3">Si vous avez des questions, souhaitez en savoir plus sur mes projets ou explorer des opportunités de collaboration, n'hésitez pas à me contacter en remplissant ce formulaire. Je reviendrai vers vous dès que possible.</p>
+
+    <fieldset>
+        <h1 class="form">Mon formulaire</h1>
+        <form method="get" id="contactForm">
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Ecrivez votre Nom" required> 
+            </p>
+
+            <p>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Ecrivez votre Prénom" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="Homme">Homme</label>
+                <input type="radio" name="sexe" id="Homme" value="Homme">
+                <label for="Femme">Femme</label>
+                <input type="radio" name="sexe" id="Femme" value="Femme">
+            </p>
+
+            <p>
+                <label for="fichier">Ajoutez un fichier</label>
+                <input type="file" name="fichier" id="fichier">
+            </p>
+
+            <p>
+                <textarea name="Message" id="msg" cols="40" rows="10">Redigez votre message</textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Envoyez">
+                <input type="reset" name="" id="">
+            </p>
+
+            <p id="errorMessage" style="color:red;"></p>
+        </form>
+    </fieldset>
+
+
+    <script src="form.js"></script>
+</body>
+</html>
