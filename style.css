@@ -236,11 +236,22 @@ body {
         }
         form {
             width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
         }
         input, textarea {
             width: 100%
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px
         }
         nav ul {
             display: block;
+            text-align: center;
+        }
+        nav ul li {
+            display : block;
+            margin-bottom: 10px;
+        }
         }
     }
